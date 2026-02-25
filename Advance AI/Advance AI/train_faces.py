@@ -6,8 +6,7 @@ import requests
 import threading  # To keep camera smooth
 
 # --- 1. SETTINGS ---
-TOKEN = "8506327820:AAFC5AjMtCxY4UBCQ8CnBEqH9v-OcZ_LRb4"
-CHAT_ID = "6958248330"
+
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 recognizer = cv2.face.LBPHFaceRecognizer_create()
@@ -89,4 +88,5 @@ while True:
         break
 
 cap.release()
+
 cv2.destroyAllWindows()
